@@ -10,7 +10,7 @@ Load Page
 				Website();
 				$('body').jKit();
 		},
-		waitForAll: true
+		waitForAll: false
 	});
 
 
@@ -39,8 +39,8 @@ function Website() {
 		$('body').jKit();
 		backgroundmenu();
 		setTimeout(function(){
-			$(".preloader").fadeOut(500);							
-		},500);
+			$(".preloader").fadeOut(100);							
+		},100);
 		setTimeout(function(){
 			$('header').fadeIn();							
 		},500);
@@ -124,16 +124,20 @@ $(document).ready(function(){
 	setTimeout( function(){
 		if($("#site-type").length) {
         $(".typewrite span").typed({
-            strings: ["show case ", "projects "],
+            strings: [
+              "Welcome to IMIML! ",
+              "I'm a Developer. ",
+              "It's My Portfolio. ",
+            ],
             typeSpeed: 100,
-            backDelay: 500,
+            backDelay: 1000,
             loop: false,
             contentType: 'html', // or text
             // defaults to false for infinite loop
             loopCount: false,
         });
     }
-	}, 3000);
+	}, 1);
 });
 }
 
@@ -193,7 +197,7 @@ function showPreloader() {
 }
 
 function hidePreloader() {
-  $(".preloader").delay(2000).fadeOut("slow");
+  $(".preloader").delay(10).fadeOut("slow");
 }
 
 
