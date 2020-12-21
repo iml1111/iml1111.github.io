@@ -26,6 +26,7 @@ p{
   font-weight: 400;
 }
 
+
 a{
   text-decoration:none;
   -webkit-transition: all 0.2s ease-in;
@@ -384,14 +385,64 @@ CONTENT
   line-height:70px;
 }
 
+.content .text-intro h2{
+  font-size:32px;
+  width:40%;
+  text-transform:uppercase;
+  color:#000000;
+  font-weight:900;
+  line-height:40px;
+}
+
+
+.content .text-intro h3{
+  font-size:20px;
+  width:40%;
+  text-transform:uppercase;
+  color:#000000;
+  font-weight:900;
+  line-height:70px;
+}
+
+.content .text-intro h4{
+  font-size:20px;
+  width:40%;
+  text-transform:uppercase;
+  color:#000000;
+  font-weight:900;
+  line-height:0px;
+}
+
 .content .text-intro p{
-  font-size:13px;
+  font-size:14px;
   color:#8d8d8d;
   margin-top:30px;
   font-weight:400;
   line-height:22px;
   letter-spacing:1px;
   width:40%;
+}
+
+.content .text-intro p.custom{
+  font-size:16px;
+  color:#8d8d8d;
+  margin-top:30px;
+  font-weight:400;
+  line-height:22px;
+  letter-spacing:1px;
+  width:100%;
+}
+
+.text-intro i{
+  font-size: 4rem;
+}
+
+.text-intro i.custom{
+  font-size: 1rem;
+}
+
+.text-intro svg{
+  font-size: 4rem;
 }
 
         .typed-cursor{
@@ -520,7 +571,7 @@ li.grid-item{
   width:360px;
   height: 100%;
   top:0;
-  background: white;
+  background: rgba(0,0,0,0);
   z-index: 2;
   opacity: 0;
   -webkit-transition: all 0.2s ease-in;
@@ -528,9 +579,11 @@ li.grid-item{
 	-ms-transition: all 0.2s ease-in;
 	-o-transition: all 0.2s ease-in;
 	transition: all 0.2s ease-in; 
+  opacity: 0.9;
 }
 
 .grid-hover:hover{
+  background: white;
   opacity: 0.9;
 }
 
